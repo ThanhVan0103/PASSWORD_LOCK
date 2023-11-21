@@ -1,0 +1,33 @@
+the disp_pass function is written to display the key pressed and to compare it with the correct passkey
+the pressed keys will be stored in the key_array of 5 elements
+the correct passkey is written in the enter key array
+
+the passed key is taken in the key_var variable
+if the key is not pressed the key_var variable value will be 16
+else it will be the pressed key value in between 0 to 15
+
+in the if loop, the passed key is stored in the key array
+and the passed key is added to make it to ascii characters
+the ascii value is then passed to LCD function to display
+
+the pass variable is incremented by 1 on line 125
+on the next line, if the pass variable is incremented to 5, 
+that means if 5 keys are stored in the array,
+the program will compare the entered array with the correct passkey,
+
+the LCD function call on line 128 will take the cursor on second line first position
+the for loop compares the entered key with the correct passkey
+the entered key is stored in the key array and the correct passkey is in the enter key array
+one by one characters in both the arrays are compared and
+if any one character is mismatched, then if loop will display reenter passsword on the LCD
+and will come out of the loop with reseting the pass variable
+
+Hàm Disp_pass_key được viết để hiển thị phím đã được nhấn và so sánh nó với mật khẩu đúng.
+Các phím đã nhấn sẽ được lưu trữ trong mảng key_arr gồm 5 phần tử. Mật khẩu đúng được lưu trữ trong mảng enter_key.
+Phím đã nhấn được lấy vào biến key_var. Nếu không có phím nào được nhấn, giá trị biến key_var sẽ là 16, ngược lại nó sẽ là giá trị của phím đã nhấn từ 0 đến 15.
+Trong vòng lặp if, phím đã nhấn được lưu trữ trong mảng key_arr và được chuyển đổi thành ký tự ASCII bằng cách cộng thêm giá trị. Giá trị ASCII sau đó được truyền vào hàm LCD để hiển thị.
+Biến pass_var1 được tăng lên 1 tại dòng 125. Ở dòng tiếp theo, nếu pass_var1 được tăng lên 5, điều này có nghĩa là nếu đã có 5 phím được lưu trong mảng, chương trình sẽ so sánh mảng đã nhập với mật khẩu đúng.
+Cuộc gọi hàm LCD tại dòng 128 sẽ đưa con trỏ đến vị trí đầu tiên của dòng thứ hai. Vòng lặp for so sánh mảng phím đã nhập với mật khẩu đúng. Phím đã nhập được lưu trong mảng key_arr và mật khẩu đúng được lưu trong mảng enter_key. Một cách tuần tự, từng ký tự trong cả hai mảng được so sánh và nếu có bất kỳ ký tự nào không khớp, vòng lặp if sẽ hiển thị "Re-enter password" trên màn hình LCD và thoát khỏi vòng lặp bằng cách đặt lại giá trị của biến pass_var1.
+
+
+
